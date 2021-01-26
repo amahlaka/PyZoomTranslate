@@ -1,22 +1,24 @@
 # PyZoomTranslate
 Python based auto translating captioning tool for Zoom
 
-How this works:
-Zoom sends a livestream of the meeting to a NGINX rtmp endpoint, 
-ffmpeg takes the audio from that stream and feeds it to a virtual loopback device.
-The python code then listens to that device, and sends the audio to Google's Cloud Speech to Text api, which returns with the text version of your speech, then, that text is send to Google Translate, and after being translated, it is sent to the zoom "Live caption" api.
+## How this works:
+Zoom sends a livestream of the meeting to a NGINX rtmp endpoint,  
+ffmpeg takes the audio from that stream and feeds it to a virtual loopback device.  
+The python code then listens to that device, and sends the audio to Google's Cloud Speech to Text api,  
+which returns with the text version of your speech, then, that text is send to Google Translate,  
+and after being translated, it is sent to the zoom "Live caption" api.
 
 It's a dirty, hacky way to do it 
 
 No Warranty
 
-If I have time to properly document this (and to make it actually stable), I will
-Feel free to submit pull requests if you want to help :)
+If I have time to properly document this (and to make it actually stable), I will.  
+Feel free to submit pull requests if you want to help :)  
 
-The code is currently translating from Finnish to English (That is easy to change)!
+The code is currently translating from Finnish to English (That is easy to change)!  
 
 
-This early version was made in one single evening, so it's not pretty, but it works (somehow)
+This early version was made in one single evening, so it's not pretty, but it works (somehow). 
 
 
 ## API's used, documentation:
