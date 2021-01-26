@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+.temp_phrases
+zoomtranslate-302817-223a233c201a.json
+.vscode/settings.json
+out.wav
